@@ -31,7 +31,20 @@ as your default shell.
 
 I'm sure you could configure this to run when you first open the shell, but I didn't look into it.
 
+###pull-all.sh
 
+####Overview
+
+This is exactly the same as `pull-all.ps1`, but for `sh`. Should run fine on anything that has `sh` or
+`bash`.
+
+####Usage
+**(NOTE!: I didn't actually test all of this, since the only *nix thing I have is my iPhone, and I didn't
+feel like setting up `git` on it. I did test the script itself in `Git bash`, so the only real thing I
+didn't test is the file-system location)**
+
+- Add `pull-all` to `/usr/bin`.
+- Open your favourite shell, navigate to the root directory of all your GitHub repos, and run `pull-all`.
 
 
 
