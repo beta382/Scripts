@@ -1,0 +1,1 @@
+Get-ChildItem | ? { $_.PSIsContainer } | % { Push-Location $_.FullName; git pull origin master; Pop-Location }
