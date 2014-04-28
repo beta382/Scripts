@@ -3,8 +3,8 @@
 echo
 find -type d -mindepth 1 -maxdepth 1 -exec basename {} \; | while IFS= read -r line; do 
     cd "$line"
-    echo "Pulling to $line"
-    git pull origin master 2> /dev/null
+    echo "Fetching $line"
+    git fetch 2> /dev/null
     echo
     cd ..
 done
